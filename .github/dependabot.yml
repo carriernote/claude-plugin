@@ -1,0 +1,15 @@
+# Monthly, grouped GitHub Actions updates, as in waste-management-console.
+# The `ci` prefix makes each Dependabot PR title pass the conventional-commits
+# title check.
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    commit-message:
+      prefix: "ci"
+    groups:
+      actions:
+        patterns:
+          - "*"
