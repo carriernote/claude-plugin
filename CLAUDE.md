@@ -49,10 +49,12 @@ Prettier, Node) are pinned in the workflows; bump them in a PR.
 
 ## Repository settings (maintainer, in GitHub)
 
-Squash merging only, default commit message "Pull request title", auto-merge allowed,
-"Automatically delete head branches" on. Once public: `main` protected — PR required,
-status checks `Format and Markdown`, `Validate marketplace and plugins` and
-`Validate PR title` required, no force-push, no deletion.
+Squash merging only, default commit message "Pull request title", "Automatically
+delete head branches" on. While the repository is private on GitHub's Free plan,
+`main` can't be protected and auto-merge isn't available: a maintainer merges a green
+PR by hand. Once public: `main` protected — PR required, status checks
+`Format and Markdown`, `Validate marketplace and plugins` and `Validate PR title`
+required, no force-push, no deletion — and auto-merge allowed.
 
 ## Never
 
