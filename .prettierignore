@@ -1,0 +1,3 @@
+# Markdown is gated by .github/scripts/md-tables-check.mjs (unpadded tables),
+# exactly as in waste-management-console: Prettier pads every table cell.
+*.md

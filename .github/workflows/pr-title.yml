@@ -1,0 +1,62 @@
+name: PR title
+
+# Conventional Commits, on the PR title — the same rule and the same type list
+# as waste-management-console's `CI · PR title`. Every merge to main is a
+# squash merge, and GitHub uses the PR title as the squashed commit's message,
+# so checking the title checks the commit that lands on main.
+#
+# Unlike the main repo's, there is no `workflow_dispatch` re-run button: a PR
+# that conflicts with main gets no `pull_request` run at all, so merge main into
+# it first and the push runs this. `labeled`/`unlabeled` re-run it when the
+# `ignore-semantic-pull-request` label is added or removed.
+
+on:
+  pull_request:
+    types:
+      [
+        opened,
+        edited,
+        synchronize,
+        reopened,
+        ready_for_review,
+        labeled,
+        unlabeled,
+      ]
+
+permissions:
+  pull-requests: read
+
+jobs:
+  validate-pr-title:
+    name: Validate PR title
+    # Drafts are skipped, as in waste-management-console; flipping to ready
+    # runs it.
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: amannn/action-semantic-pull-request@v6
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          # Keep in step with waste-management-console's
+          # .github/workflows/conventional-commits.yml.
+          types: |
+            feat
+            fix
+            chore
+            docs
+            refactor
+            test
+            build
+            ci
+            perf
+            revert
+            style
+          requireScope: false
+          subjectPattern: ^[A-Za-z].+$
+          subjectPatternError: |
+            The subject of the PR title must start with a letter.
+            Example: `feat(plugin): sync 0.2.0 from waste-management-console`
+          ignoreLabels: |
+            ignore-semantic-pull-request
