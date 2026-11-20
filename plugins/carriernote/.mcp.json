@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "carriernote": {
+      "type": "http",
+      "url": "https://mcp.carriernote.co.uk/mcp"
+    }
+  }
+}
