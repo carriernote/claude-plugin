@@ -21,7 +21,7 @@ Then run `/mcp` and sign in to CarrierNote.
 
 ## Using it
 
-Ask Claude to write a waste transfer note, with or without a photo of the load. Every note it saves lands in CarrierNote for you to check and sign. AI assistants are being piloted with a few carriers: if signing in says they are not switched on for your company, ask CarrierNote support.
+Ask Claude to write a waste transfer note, with or without a photo of the load. Every note it saves lands in CarrierNote for you to check and sign. AI assistants are switched on company by company: if signing in says they are not on for your company, ask CarrierNote support.
 
 ## Help
 
