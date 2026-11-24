@@ -6,7 +6,7 @@ Write waste transfer notes in CarrierNote from a photo of the load or a descript
 
 ## What it adds
 
-- **The CarrierNote connector**, at `https://mcp.carriernote.co.uk/mcp`. You sign in with your CarrierNote account the first time Claude uses it. It can look up your saved customers, sites, vehicles, carriers and codes and check the public registers; check a note and save it as an unsigned note; change a note nobody has signed yet; record a load arriving at your own site; save a new customer, site, vehicle or carrier, correct a saved customer, or save a note as a template, each only once you say yes; give you a link to add photos from your phone; read back a note it saved or changed for you; and show a signing QR code or email a signing link. It cannot sign for anyone, submit anything to DEFRA, or open a note it hasn't saved or changed for you.
+- **The CarrierNote connector**, at `https://mcp.carriernote.co.uk/mcp`. You sign in with your CarrierNote account the first time Claude uses it. It can look up your saved customers, sites, vehicles, carriers and codes and check the public registers; check a note and save it as an unsigned note; change a note nobody has signed yet; record a load arriving at your own site, or log incoming waste there as a new note; save a new customer, site, vehicle or carrier, correct a saved customer, or save a note as a template, each only once you say yes; give you a link to add photos from your phone; read back a note it saved or changed for you; and show a signing QR code or email a signing link. It cannot sign for anyone, submit anything to DEFRA, or open a note it hasn't saved or changed for you.
 - **The `capture-wtn` skill**: the interview Claude follows to write the note. It asks before it decides anything, and nothing is saved until you say yes.
 
 ## Installing it
@@ -21,7 +21,7 @@ Then run `/mcp` and sign in to CarrierNote.
 
 ## Using it
 
-Ask Claude to write a waste transfer note, with or without a photo of the load. Every note it saves lands in CarrierNote for you to check and sign.
+Ask Claude to write a waste transfer note, with or without a photo of the load. Every note it saves lands in CarrierNote for you to check and sign. If your business runs a receiving site, ask it to log a load that has arrived.
 
 ## Help
 
