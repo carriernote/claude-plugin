@@ -26,3 +26,7 @@ Ask Claude to write a waste transfer note, with or without a photo of the load. 
 ## Help
 
 Support: https://carriernote.co.uk/support or support@carriernote.co.uk. Privacy: https://carriernote.co.uk/legal/privacy. Terms: https://carriernote.co.uk/legal/terms.
+
+## Licence
+
+MIT, copyright 2026 Red Tape Software Ltd: see `LICENSE` at the root of this repository.
