@@ -67,3 +67,5 @@ actions are pinned to a commit.
 - Never commit a secret, token, client secret or test-account credential.
 - Never point the plugin at any server but `https://mcp.carriernote.co.uk/mcp`.
 - Never add another plugin, or mention any non-production plugin or environment.
+
+<!-- Ruleset check: this PR is closed, never merged. -->
