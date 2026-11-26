@@ -50,11 +50,17 @@ Prettier, Node) are pinned in the workflows; bump them in a PR.
 ## Repository settings (maintainer, in GitHub)
 
 Squash merging only, default commit message "Pull request title", "Automatically
-delete head branches" on. While the repository is private on GitHub's Free plan,
-`main` can't be protected and auto-merge isn't available: a maintainer merges a green
-PR by hand. Once public: `main` protected — PR required, status checks
-`Format and Markdown`, `Validate marketplace and plugins` and `Validate PR title`
-required, no force-push, no deletion — and auto-merge allowed.
+delete head branches" and auto-merge on. Once public, `main` has a ruleset: PR
+required with one approval from a code owner (`.github/CODEOWNERS`), stale
+approvals dismissed, conversations resolved, status checks `Format and Markdown`,
+`Validate marketplace and plugins` and `Validate PR title` required and up to
+date, linear history, no force-push, no deletion. Repository admins bypass it
+for pull requests only: release PRs are opened under the owner's account, which
+GitHub won't let approve its own PR, so a maintainer merges them by that bypass,
+never by a direct push. Actions run read-only, need approval for outside
+contributors, and may not approve PRs; secret scanning, push protection and
+private vulnerability reporting are on (`.github/SECURITY.md`). Third-party
+actions are pinned to a commit.
 
 ## Never
 
