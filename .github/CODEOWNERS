@@ -1,0 +1,4 @@
+# Every change to this repository needs a code owner's review before it merges.
+# Release PRs opened under the owner's own account are merged through the
+# repository-admin bypass on the `main` ruleset (pull requests only).
+* @ilovegithub2
