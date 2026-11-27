@@ -13,7 +13,7 @@ In Claude Code:
 
 Then run `/mcp`, choose CarrierNote, and sign in with your CarrierNote account.
 
-You need a CarrierNote account with AI assistants switched on for your business.
+You need a CarrierNote account.
 
 ## Help
 
