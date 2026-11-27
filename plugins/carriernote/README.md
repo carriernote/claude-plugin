@@ -11,6 +11,8 @@ Write waste transfer notes in CarrierNote from a photo of the load or a descript
 
 ## Installing it
 
+You need a CarrierNote account.
+
 In Claude Code, once the CarrierNote marketplace is added:
 
 ```text

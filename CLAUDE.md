@@ -8,8 +8,8 @@ plugin in this repository; it becomes public at launch.
 ## The content is generated — never edit it here
 
 Everything except `.github/`, `.prettierignore`, `CLAUDE.md` and `README.md` is
-written by CarrierNote's release tooling (`yarn mcp:plugin` in the private
-waste-management-console repository) from the shared MCP prompt source. Change it
+written by CarrierNote's release tooling (`yarn mcp:plugin` in CarrierNote's private source
+repository) from the shared MCP prompt source. Change it
 there, add a release with a new version (installed plugins only update when the
 version changes), then open a sync PR here. The sync writes and overwrites its own
 files and removes nothing else.
@@ -17,8 +17,8 @@ files and removes nothing else.
 ## Git — hard rules
 
 - **Never push or commit to `main`.** Every change is a branch and a pull request;
-  a maintainer (Steve or Oli) merges.
-- **Open every PR as a draft**, and ask Steve or Oli before marking it ready. The PR
+  a maintainer merges.
+- **Open every PR as a draft**, and ask a maintainer before marking it ready. The PR
   title check runs only on ready PRs.
 - **Conventional Commits PR titles**: `<type>(optional scope): <subject>`, type one of
   feat, fix, chore, docs, refactor, test, build, ci, perf, revert, style. Merges are
@@ -26,7 +26,7 @@ files and removes nothing else.
   `feat(plugin): release <version>` (or `fix(plugin): …` for a fix-only release).
 - Branch names: `claude/<slug>` for a session, `release/<version>` for a sync.
 - Never force-push, never `git rebase -i`, never `--no-verify`.
-- A release PR's body names the waste-management-console commit or PR it was
+- A release PR's body names the source repository's commit or PR it was
   generated from, and the new version.
 
 ## CI
