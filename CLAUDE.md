@@ -17,7 +17,7 @@ files and removes nothing else.
 ## Git — hard rules
 
 - **Never push or commit to `main`.** Every change is a branch and a pull request;
-  a maintainer (a maintainer) merges.
+  a maintainer merges.
 - **Open every PR as a draft**, and ask a maintainer before marking it ready. The PR
   title check runs only on ready PRs.
 - **Conventional Commits PR titles**: `<type>(optional scope): <subject>`, type one of
